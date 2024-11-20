@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.appnutriologia"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.appnutriologia"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -29,6 +29,24 @@ android {
             )
         }
     }
+
+    flavorDimensions += "enviroment"
+
+    productFlavors{
+        create("dev"){
+            dimension = "enviroment"
+            buildConfigField("String", "BASE_URL_API", "\"https://www.themealdb.com/api.php\"")
+        }
+        create("qa"){
+            dimension = "enviroment"
+            buildConfigField("String", "BASE_URL_API", "\"https://www.themealdb.com/api.php\"")
+        }
+        create("pro"){
+            dimension = "enviroment"
+            buildConfigField("String", "BASE_URL_API", "\"https://www.themealdb.com/api.php\"")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -38,6 +56,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
