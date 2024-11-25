@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.appnutriologia.ui.MainScreen
+import com.example.appnutriologia.ui.screens.CategoryListScreen
 import com.example.appnutriologia.ui.theme.AppNutriologiaTheme
 
 //val baseUrl = BuildConfig.BASE_URL
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppNutriologiaTheme {
-               MainScreen()
+                CategoryListScreen()
             }
         }
     }
