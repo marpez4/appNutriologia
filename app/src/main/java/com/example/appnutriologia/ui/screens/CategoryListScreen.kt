@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -25,7 +26,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -33,6 +36,7 @@ import coil.compose.AsyncImage
 import com.example.appnutriologia.model.Category
 import com.example.appnutriologia.ui.viewmodels.CategoryFoodModel
 import com.example.appnutriologia.ui.viewmodels.CategoryUiState
+import com.example.appnutriologia.R
 
 
 @Composable
@@ -41,7 +45,7 @@ fun CategoryListScreen(categoryFoodModel: CategoryFoodModel = viewModel()) {
 
     Scaffold(
         topBar = {
-             TopAppBar(title = { Text(text = "Lista de categorías") })
+             TopAppBar(title = { Text(stringResource(id = R.string.list_categorias)) })
         }
     )  { paddingValues ->
         Box(modifier = Modifier.fillMaxSize().padding(paddingValues)){
@@ -78,7 +82,11 @@ fun CategoryItem(category: Category) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(4.dp)
+            .padding(4.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color(0xFF66BB6A)
+        )
+
     ) {
         Row(
             modifier = Modifier.padding(16.dp),
@@ -97,8 +105,7 @@ fun CategoryItem(category: Category) {
                     style = TextStyle(fontSize = 24.sp)
                 )
                 Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = "Description: ${category.strCategoryDescription}"
+                Text(stringResource(id = R.string.descripcion, stringResource(id = R.string.accesos_rapidos) )
                 )
             }
         }
