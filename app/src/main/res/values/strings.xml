@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">appNutriologia</string>
     <string name="accesos_rapidos">Accesos rápidos</string>
-    <string name="categorias">Categorías</string>
+    <string name="categorias">Categorías de comidas</string>
     <string name="list_categorias">Lista de categorías</string>
-    <string name="descripcion">Descripcion</string>
+    <string name="descripcion">Descripción</string>
+    <string name="descripcion_image">Descripción de imagen</string>
+    <string name="avances">Tus Avances</string>
+    <string name="inicio">Inicio</string>
 </resources>

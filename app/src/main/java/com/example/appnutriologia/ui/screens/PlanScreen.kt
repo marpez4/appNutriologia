@@ -10,9 +10,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun PlanScreen(innerPadding: PaddingValues){
+fun PlanScreen(){
     Box(modifier = Modifier.fillMaxSize()
-        .padding(innerPadding),
+        .padding(),
         contentAlignment = Alignment.Center
     ){
         Text("Plan screen")
