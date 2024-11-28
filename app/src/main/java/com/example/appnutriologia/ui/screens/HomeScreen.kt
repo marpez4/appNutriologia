@@ -72,7 +72,7 @@ fun HomeScreenPreview(navController: NavController){
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.category),
+                        painter = painterResource(id = R.drawable.dieta),
                         contentDescription = stringResource(id = R.string.descripcion_image),
                         modifier = Modifier
                             .size(48.dp)

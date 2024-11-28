@@ -33,8 +33,7 @@ fun MainScreen(){
         ){
             composable(Screen.Home.route){ HomeScreen(navController) }
             composable(Screen.Medidas.route){ MedidasScreen() }
-            composable(Screen.Plan.route){ PlanScreen() }
-            composable(Screen.Plan.route){ PlanScreen() }
+            composable(Screen.Plan.route){ PlanScreen(navController) }
             composable("categoryList"){ CategoryListScreen(navController) }
             composable("categoryDetail/{categoryId}"){ backStackEntry ->
                 val categoryId = backStackEntry.arguments?.getString("categoryId")
