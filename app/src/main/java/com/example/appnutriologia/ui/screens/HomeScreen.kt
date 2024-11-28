@@ -5,7 +5,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -27,7 +26,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import com.example.appnutriologia.R
 
 @Composable
@@ -94,7 +92,7 @@ fun HomeScreenPreview(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .height(120.dp)
-                .clickable {  },
+                .clickable { navController.navigate("detailCategoryList") },
             colors = CardDefaults.cardColors(containerColor = Color(0xFFFFEB3B))
         ){
             Box(

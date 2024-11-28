@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">appNutriologia</string>
+    <string name="error">Un error inesperado ocurrio</string>
     <string name="accesos_rapidos">Accesos rápidos</string>
     <string name="categorias">Categorías de comidas</string>
     <string name="list_categorias">Lista de categorías</string>
@@ -7,4 +8,8 @@
     <string name="descripcion_image">Descripción de imagen</string>
     <string name="avances">Tus Avances</string>
     <string name="inicio">Inicio</string>
+    <string name="alimentos">Alimentos con</string>
+    <string name="category_not_found">Categoria no encontrada</string>
+    <string name="atras">Ir Atras</string>
+
 </resources>
