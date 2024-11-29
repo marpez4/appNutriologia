@@ -17,7 +17,7 @@ sealed class CategoryUiState {
 }
 
 class CategoryFoodModel(
-    private val repository: FoodRepository = FoodRepository()
+    private val repository: FoodRepository
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<CategoryUiState>(CategoryUiState.Loading)

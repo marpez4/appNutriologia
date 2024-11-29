@@ -46,7 +46,7 @@ import com.example.appnutriologia.R
 
 
 @Composable
-fun CategoryListScreen(navController: NavController, categoryFoodModel: CategoryFoodModel = viewModel()) {
+fun CategoryListScreen(navController: NavController, categoryFoodModel: CategoryFoodModel) {
 
     val uiState by categoryFoodModel.uiState.collectAsState()
 

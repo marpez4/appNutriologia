@@ -12,4 +12,9 @@
     <string name="category_not_found">Categoria no encontrada</string>
     <string name="atras">Ir Atras</string>
     <string name="plan">Tus planes alimenticios</string>
+    <string name="medidas">Tu historial de peso </string>
+    <string name="addmedida">Agregar nuevo peso </string>
+    <string name="medida">Peso en kg</string>
+    <string name="agregar">Agregar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>
