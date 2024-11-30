@@ -17,4 +17,7 @@
     <string name="medida">Peso en kg</string>
     <string name="agregar">Agregar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="agregarMed">Agregar Peso</string>
+    <string name="peso">Peso en kg</string>
+    <string name="notes">Notas</string>
 </resources>
