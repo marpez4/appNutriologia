@@ -20,4 +20,5 @@
     <string name="agregarMed">Agregar Peso</string>
     <string name="peso">Peso en kg</string>
     <string name="notes">Notas</string>
+    <string name="grafico">Grafico de Kg</string>
 </resources>

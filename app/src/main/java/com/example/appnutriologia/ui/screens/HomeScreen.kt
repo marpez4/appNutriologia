@@ -92,7 +92,7 @@ fun HomeScreenPreview(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .height(120.dp)
-                .clickable { navController.navigate("detailCategoryList") },
+                .clickable { navController.navigate("medidasGraph") },
             colors = CardDefaults.cardColors(containerColor = Color(0xFFFFEB3B))
         ){
             Box(

@@ -17,6 +17,7 @@ import com.example.appnutriologia.ui.navigation.TopBar
 import com.example.appnutriologia.ui.screens.CategoryDetailListScreen
 import com.example.appnutriologia.ui.screens.CategoryListScreen
 import com.example.appnutriologia.ui.screens.HomeScreen
+import com.example.appnutriologia.ui.screens.MedidasGraphScreen
 import com.example.appnutriologia.ui.screens.MedidasScreen
 import com.example.appnutriologia.ui.screens.PlanScreen
 import com.example.appnutriologia.ui.viewmodels.CategoryFoodModel
@@ -41,6 +42,7 @@ fun MainScreen(){
             composable(Screen.Home.route){ HomeScreen(navController) }
             composable(Screen.Medidas.route){ MedidasScreen() }
             composable(Screen.Plan.route){ PlanScreen(navController) }
+            composable("medidasGraph"){ MedidasGraphScreen() }
             composable("categoryList"){ CategoryListScreen(navController, foodViewModel) }
             composable("categoryDetail/{categoryId}"){ backStackEntry ->
                 val categoryId = backStackEntry.arguments?.getString("categoryId")

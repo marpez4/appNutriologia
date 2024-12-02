@@ -59,12 +59,12 @@ fun AddMedidaDialog(
                     onDismiss()
                 }
             ) {
-                Text("Add")
+                Text(stringResource(id = R.string.agregar))
             }
         },
         dismissButton = {
             Button(onClick = onDismiss) {
-                Text("Cancel")
+                Text(stringResource(id = R.string.cancelar))
             }
         }
     )
