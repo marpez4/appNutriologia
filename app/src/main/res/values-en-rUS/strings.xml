@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">appNutriologia</string>
+    <string name="error">An unexpected error ocurred</string>
+    <string name="accesos_rapidos">Quick access</string>
+    <string name="categorias">Food Categories</string>
+    <string name="list_categorias">List categories</string>
+    <string name="descripcion">Description</string>
+    <string name="descripcion_image">Image description</string>
+    <string name="avances">Your progress</string>
+    <string name="inicio">Home</string>
+    <string name="alimentos">Food with</string>
+    <string name="category_not_found">Categorie not found</string>
+    <string name="atras">Go back</string>
+    <string name="plan">Your food plans</string>
+    <string name="medidas">Your weight history</string>
+    <string name="addmedida">Add new weight</string>
+    <string name="medida">Weigth in Kg</string>
+    <string name="agregar">Add</string>
+    <string name="cancelar">Cancel</string>
+    <string name="agregarMed">Add weight</string>
+    <string name="peso">Weigth in Kg</string>
+    <string name="notes">Notes</string>
+    <string name="grafico">Graph Kg</string>
+</resources>
