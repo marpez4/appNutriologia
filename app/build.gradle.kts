@@ -33,20 +33,24 @@ android {
 
     flavorDimensions += "enviroment"
 
-    productFlavors{
-        create("dev"){
+    productFlavors {
+        create("dev") {
             dimension = "enviroment"
             buildConfigField("String", "BASE_URL_API", "\"https://www.themealdb.com/api/\"")
+            buildConfigField("int", "COLOR_NAV", "0xFF388E3C")
         }
-        create("qa"){
+        create("qa") {
             dimension = "enviroment"
             buildConfigField("String", "BASE_URL_API", "\"https://www.themealdb.com/api/\"")
+            buildConfigField("int", "COLOR_NAV", "0xFFFF9800")
         }
-        create("pro"){
+        create("pro") {
             dimension = "enviroment"
             buildConfigField("String", "BASE_URL_API", "\"https://www.themealdb.com/api/\"")
+            buildConfigField("int", "COLOR_NAV", "0xFF66BB6A")
         }
     }
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

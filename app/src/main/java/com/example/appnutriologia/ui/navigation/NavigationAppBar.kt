@@ -12,6 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
+import com.example.appnutriologia.BuildConfig
 
 @Composable
 fun NavigationAppBar(navController: NavController){
@@ -20,7 +21,9 @@ fun NavigationAppBar(navController: NavController){
 
     var items =  listOf(Screen.Home.route, Screen.Medidas.route, Screen.Plan.route)
 
-    NavigationBar(containerColor = Color(0xFF388E3C), contentColor = Color.White){
+    val navColor = Color(BuildConfig.COLOR_NAV)
+
+    NavigationBar(containerColor = navColor, contentColor = Color.White){
 
         items.forEachIndexed{index, item ->
             NavigationBarItem(
