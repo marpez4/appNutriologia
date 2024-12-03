@@ -99,6 +99,14 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:4.0.0")
+    testImplementation("org.mockito:mockito-inline:4.0.0")
+    testImplementation("com.squareup.retrofit2:retrofit:2.11.0")
+    testImplementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
+
     testImplementation ("androidx.compose.ui:ui-test-junit4:1.5.4")
     androidTestImplementation ("androidx.navigation:navigation-testing:2.8.1")
     debugImplementation ("androidx.compose.ui:ui-test-manifest:1.5.3")
